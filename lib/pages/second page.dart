@@ -10,6 +10,11 @@ class SecondPage extends StatefulWidget {
 }
 
 class _SecondPageState extends State<SecondPage> {
+  final petname = TextEditingController();
+  final petbreed = TextEditingController();
+  final petcolour = TextEditingController();
+  final petweight = TextEditingController();
+
   final dob = TextEditingController();
   final lastheat = TextEditingController();
   final nextheat = TextEditingController();
@@ -42,6 +47,8 @@ class _SecondPageState extends State<SecondPage> {
                   height: 10.0,
                 ),
                 buildTextfield(
+                  type: TextInputType.name,
+                  value: petname,
                   line: 1,
                   lableText: 'Pet Name',
                 ),
@@ -49,6 +56,8 @@ class _SecondPageState extends State<SecondPage> {
                   height: 15.0,
                 ),
                 buildTextfield(
+                  type: TextInputType.name,
+                  value: petbreed,
                   line: 1,
                   lableText: 'Breed',
                 ),
@@ -56,13 +65,15 @@ class _SecondPageState extends State<SecondPage> {
                   height: 15.0,
                 ),
                 buildTextfield(
+                  type: TextInputType.name,
+                  value: petcolour,
                   line: 1,
                   lableText: 'Colour',
                 ),
                 SizedBox(
                   height: 15.0,
                 ),
-                buildDatefield(datearg: dob, hint: 'Start Date'),
+                buildDatefield(datearg: dob, hint: 'DOB'),
                 SizedBox(
                   height: 15.0,
                 ),
@@ -116,6 +127,8 @@ class _SecondPageState extends State<SecondPage> {
                   height: 15.0,
                 ),
                 buildTextfield(
+                  type: TextInputType.number,
+                  value: petweight,
                   line: 1,
                   lableText: 'Weight',
                 ),

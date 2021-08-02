@@ -1,15 +1,26 @@
 import 'package:flutter/material.dart';
 
+import 'package:intl/intl.dart';
+import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
+
 //textField
 class buildTextfield extends StatelessWidget {
-  buildTextfield({required this.line, required this.lableText});
+  buildTextfield(
+      {required this.line,
+      required this.lableText,
+      required this.type,
+      required this.value});
 
   int line;
   String lableText;
+  TextInputType type;
+  TextEditingController value;
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: value,
+      keyboardType: TextInputType.name,
       maxLines: line,
       decoration: InputDecoration(
         border: OutlineInputBorder(),
@@ -46,3 +57,5 @@ class buildDatefield extends StatelessWidget {
     );
   }
 }
+
+//time

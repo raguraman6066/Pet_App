@@ -11,6 +11,11 @@ class ThirdPage extends StatefulWidget {
 }
 
 class _ThirdPageState extends State<ThirdPage> {
+  final vetname = TextEditingController();
+  final vetcontact = TextEditingController();
+  final vettime = TextEditingController();
+  final vetweekoff = TextEditingController();
+
   final rslast = TextEditingController();
   final rsnext = TextEditingController();
 
@@ -55,6 +60,8 @@ class _ThirdPageState extends State<ThirdPage> {
                   height: 15.0,
                 ),
                 buildTextfield(
+                  type: TextInputType.name,
+                  value: vetname,
                   line: 1,
                   lableText: 'Name',
                 ),
@@ -62,6 +69,8 @@ class _ThirdPageState extends State<ThirdPage> {
                   height: 15.0,
                 ),
                 buildTextfield(
+                  type: TextInputType.number,
+                  value: vetcontact,
                   line: 1,
                   lableText: 'Contact No',
                 ),
@@ -69,6 +78,8 @@ class _ThirdPageState extends State<ThirdPage> {
                   height: 15.0,
                 ),
                 buildTextfield(
+                  type: TextInputType.name,
+                  value: vettime,
                   line: 1,
                   lableText: 'Clinic Timing',
                 ),
@@ -76,6 +87,8 @@ class _ThirdPageState extends State<ThirdPage> {
                   height: 15.0,
                 ),
                 buildTextfield(
+                  type: TextInputType.name,
+                  value: vetweekoff,
                   line: 1,
                   lableText: 'Week Off',
                 ),

@@ -10,6 +10,16 @@ class FifthPage extends StatefulWidget {
 }
 
 class _FifthPageState extends State<FifthPage> {
+  final ispet1 = TextEditingController();
+  final ispet2 = TextEditingController();
+  final ispet3 = TextEditingController();
+  final ispet4 = TextEditingController();
+  final ispet5 = TextEditingController();
+  final ispet6 = TextEditingController();
+  final ispet7 = TextEditingController();
+  final ispet8 = TextEditingController();
+  final petexcercise = TextEditingController();
+
   bool? eightyes1 = false;
   bool? eightyes2 = false;
   bool? eightyes3 = false;
@@ -101,6 +111,8 @@ class _FifthPageState extends State<FifthPage> {
                       ),
                       Expanded(
                         child: buildTextfield(
+                          type: TextInputType.text,
+                          value: ispet1,
                           line: 1,
                           lableText: 'If Yes, Specify',
                         ),
@@ -150,6 +162,8 @@ class _FifthPageState extends State<FifthPage> {
                       ),
                       Expanded(
                         child: buildTextfield(
+                          type: TextInputType.text,
+                          value: ispet2,
                           line: 1,
                           lableText: 'If Yes, Specify',
                         ),
@@ -199,6 +213,8 @@ class _FifthPageState extends State<FifthPage> {
                       ),
                       Expanded(
                         child: buildTextfield(
+                          type: TextInputType.text,
+                          value: ispet3,
                           line: 1,
                           lableText: 'If Yes, Specify',
                         ),
@@ -248,6 +264,8 @@ class _FifthPageState extends State<FifthPage> {
                       ),
                       Expanded(
                         child: buildTextfield(
+                          type: TextInputType.text,
+                          value: ispet4,
                           line: 1,
                           lableText: 'If Yes, Specify',
                         ),
@@ -297,6 +315,8 @@ class _FifthPageState extends State<FifthPage> {
                       ),
                       Expanded(
                         child: buildTextfield(
+                          type: TextInputType.text,
+                          value: ispet5,
                           line: 1,
                           lableText: 'If Yes, Specify',
                         ),
@@ -346,6 +366,8 @@ class _FifthPageState extends State<FifthPage> {
                       ),
                       Expanded(
                         child: buildTextfield(
+                          type: TextInputType.text,
+                          value: ispet6,
                           line: 1,
                           lableText: 'If Yes, Specify',
                         ),
@@ -395,6 +417,8 @@ class _FifthPageState extends State<FifthPage> {
                       ),
                       Expanded(
                         child: buildTextfield(
+                          type: TextInputType.text,
+                          value: ispet7,
                           line: 1,
                           lableText: 'If Yes, Specify',
                         ),
@@ -444,6 +468,8 @@ class _FifthPageState extends State<FifthPage> {
                       ),
                       Expanded(
                         child: buildTextfield(
+                          type: TextInputType.text,
+                          value: ispet8,
                           line: 1,
                           lableText: 'If Yes, Specify',
                         ),
@@ -582,6 +608,8 @@ class _FifthPageState extends State<FifthPage> {
                     height: 15.0,
                   ),
                   buildTextfield(
+                    type: TextInputType.number,
+                    value: petexcercise,
                     line: 1,
                     lableText: '',
                   ),

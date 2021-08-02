@@ -5,13 +5,17 @@ import 'package:untitled/pages/second page.dart';
 import 'package:untitled/pages/sixth%20page.dart';
 
 class FirstPage extends StatefulWidget {
-  const FirstPage({Key? key}) : super(key: key);
-
   @override
   _FirstPageState createState() => _FirstPageState();
 }
 
 class _FirstPageState extends State<FirstPage> {
+  final ownerName = TextEditingController();
+  final address = TextEditingController();
+  final mobile = TextEditingController();
+  final emailID = TextEditingController();
+  final referredBy = TextEditingController();
+
   bool? _boarding = false;
   bool? _training = false;
 
@@ -109,6 +113,8 @@ class _FirstPageState extends State<FirstPage> {
                 height: 15.0,
               ),
               buildTextfield(
+                type: TextInputType.name,
+                value: ownerName,
                 line: 1,
                 lableText: 'Owner Name',
               ),
@@ -116,6 +122,8 @@ class _FirstPageState extends State<FirstPage> {
                 height: 15.0,
               ),
               buildTextfield(
+                type: TextInputType.text,
+                value: address,
                 line: 3,
                 lableText: 'Address',
               ),
@@ -123,6 +131,8 @@ class _FirstPageState extends State<FirstPage> {
                 height: 15.0,
               ),
               buildTextfield(
+                type: TextInputType.phone,
+                value: address,
                 line: 1,
                 lableText: 'Mobile',
               ),
@@ -130,6 +140,8 @@ class _FirstPageState extends State<FirstPage> {
                 height: 15.0,
               ),
               buildTextfield(
+                type: TextInputType.emailAddress,
+                value: emailID,
                 line: 1,
                 lableText: 'Email ID',
               ),
@@ -137,6 +149,8 @@ class _FirstPageState extends State<FirstPage> {
                 height: 15.0,
               ),
               buildTextfield(
+                type: TextInputType.name,
+                value: referredBy,
                 line: 1,
                 lableText: 'Refered By',
               ),

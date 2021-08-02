@@ -11,6 +11,17 @@ class ForthPage extends StatefulWidget {
 }
 
 class _ForthPageState extends State<ForthPage> {
+  final medication1 = TextEditingController();
+  final dosage1 = TextEditingController();
+  final prescrib1 = TextEditingController();
+  final medication2 = TextEditingController();
+  final dosage2 = TextEditingController();
+  final prescrib2 = TextEditingController();
+  final medication3 = TextEditingController();
+  final dosage3 = TextEditingController();
+  final prescrib3 = TextEditingController();
+  final anyother = TextEditingController();
+
   bool? _mediyes = false;
   bool? _medino = false;
 
@@ -84,42 +95,60 @@ class _ForthPageState extends State<ForthPage> {
                     children: [
                       TableRow(children: [
                         buildTextfield(
+                          type: TextInputType.name,
+                          value: medication1,
                           line: 1,
                           lableText: 'Medication',
                         ),
                         buildTextfield(
+                          type: TextInputType.name,
+                          value: dosage1,
                           line: 1,
                           lableText: 'Dosage',
                         ),
                         buildTextfield(
+                          type: TextInputType.name,
+                          value: prescrib1,
                           line: 1,
                           lableText: 'Prescribed For',
                         )
                       ]),
                       TableRow(children: [
                         buildTextfield(
+                          type: TextInputType.name,
+                          value: medication2,
                           line: 1,
                           lableText: 'Medication',
                         ),
                         buildTextfield(
+                          type: TextInputType.name,
+                          value: dosage2,
                           line: 1,
                           lableText: 'Dosage',
                         ),
                         buildTextfield(
+                          type: TextInputType.name,
+                          value: prescrib2,
                           line: 1,
                           lableText: 'Prescribed For',
                         ),
                       ]),
                       TableRow(children: [
                         buildTextfield(
+                          type: TextInputType.name,
+                          value: medication3,
                           line: 1,
                           lableText: 'Medication',
                         ),
                         buildTextfield(
+                          type: TextInputType.name,
+                          value: dosage3,
                           line: 1,
                           lableText: 'Dosage',
                         ),
                         buildTextfield(
+                          type: TextInputType.name,
+                          value: prescrib3,
                           line: 1,
                           lableText: 'Prescribed For',
                         ),
@@ -278,6 +307,8 @@ class _ForthPageState extends State<ForthPage> {
                     ],
                   ),
                   buildTextfield(
+                    type: TextInputType.text,
+                    value: anyother,
                     line: 1,
                     lableText: 'Anyother',
                   ),
